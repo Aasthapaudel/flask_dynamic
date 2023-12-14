@@ -7,6 +7,10 @@ app.run(port=5000)
 def welcome():
     return "welcome to my youtube channel"
      
+@app.route('/hello')
+def welcome():
+    return "welcome to my hello channel"
+     
 @app.route('/success/<int:score>')
 def success(score):
     
